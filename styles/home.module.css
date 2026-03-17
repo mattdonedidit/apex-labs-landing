@@ -1,0 +1,293 @@
+/* APEX LABS Landing Page */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #0f0f0f;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-bottom: 2px solid #00d4ff;
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #00d4ff;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin-top: 20px;
+}
+
+/* Featured Peptides */
+.featured {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #00d4ff;
+}
+
+.peptideGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.peptideCard {
+  background: #1a1a2e;
+  border: 1px solid #00d4ff;
+  border-radius: 8px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.peptideCard:hover {
+  background: #16213e;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.peptideCard h3 {
+  font-size: 1.5rem;
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.peptideCard p {
+  color: #b0b0b0;
+  margin-bottom: 15px;
+}
+
+.cardDesc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #888;
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+  text-align: center;
+  border-top: 2px solid #00d4ff;
+  border-bottom: 2px solid #00d4ff;
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+.newsletter > p {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form input {
+  flex: 1;
+  min-width: 250px;
+  padding: 15px 20px;
+  background: #1a1a2e;
+  border: 2px solid #00d4ff;
+  border-radius: 4px;
+  color: #e0e0e0;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+}
+
+.form input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form button {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  border: none;
+  border-radius: 4px;
+  color: #0f0f0f;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover:not(:disabled) {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.success {
+  color: #51cf66;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+/* Discord CTA */
+.discord {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.discord h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+.discord > p {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discordBtn {
+  display: inline-block;
+  padding: 18px 50px;
+  background: linear-gradient(135deg, #5865f2, #7289da);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.discordBtn:hover {
+  background: linear-gradient(135deg, #7289da, #5865f2);
+  box-shadow: 0 0 25px rgba(88, 101, 242, 0.5);
+  transform: translateY(-3px);
+}
+
+/* Disclaimer */
+.disclaimer {
+  padding: 40px 20px;
+  background: #1a1a2e;
+  border-top: 2px solid #ff6b6b;
+  text-align: center;
+}
+
+.disclaimer p {
+  font-size: 0.95rem;
+  color: #888;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+  background: #0f0f0f;
+  border-top: 1px solid #333;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .featured h2,
+  .newsletter h2,
+  .discord h2 {
+    font-size: 1.8rem;
+  }
+
+  .peptideGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form input {
+    min-width: 100%;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}

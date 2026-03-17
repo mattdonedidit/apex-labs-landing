@@ -1,0 +1,7 @@
+{
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_DISCORD_INVITE": "https://discord.gg/kYY3p822j3"
+  }
+}
