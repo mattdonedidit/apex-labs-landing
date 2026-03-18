@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Peptide Reference Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1a1a1a;
+            line-height: 1.7;
+            background: #fff;
+        }
+        
+        .page {
+            max-width: 8.5in;
+            height: 11in;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .cover-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            border-bottom: 1px solid #e5e5e5;
+            page-break-after: always;
+        }
+        
+        .logo {
+            font-size: 3em;
+            font-weight: 700;
+            color: #5865f2;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+        
+        .disclaimer-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 30px 0;
+            max-width: 500px;
+        }
+        
+        .disclaimer-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .disclaimer-box p {
+            color: #856404;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        
+        .version-info {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 40px;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            page-break-after: avoid;
+        }
+        
+        h2 {
+            font-size: 1.6em;
+            font-weight: 600;
+            color: #2d7f4a;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            border-bottom: 2px solid #2d7f4a;
+            padding-bottom: 10px;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+        
+        .toc {
+            page-break-after: always;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin-left: 20px;
+        }
+        
+        .toc li {
+            margin: 8px 0;
+            font-size: 0.95em;
+        }
+        
+        .toc li:before {
+            content: "→ ";
+            color: #5865f2;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .introduction {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border-left: 4px solid #5865f2;
+            page-break-after: avoid;
+        }
+        
+        .introduction p {
+            margin-bottom: 12px;
+            color: #333;
+            line-height: 1.7;
+        }
+        
+        .peptide-profile {
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        .peptide-profile h3 {
+            color: #5865f2;
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+        
+        .peptide-meta {
+            font-size: 0.85em;
+            color: #999;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .section-label {
+            font-weight: 600;
+            color: #2d7f4a;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+        
+        .research-areas {
+            margin: 10px 0;
+        }
+        
+        .research-areas ul {
+            list-style-position: inside;
+            margin-left: 10px;
+            color: #666;
+        }
+        
+        .research-areas li {
+            margin: 6px 0;
+            font-size: 0.9em;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 12px 0;
+            font-size: 0.9em;
+        }
+        
+        .info-item {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #2d7f4a;
+            margin-bottom: 4px;
+        }
+        
+        .info-value {
+            color: #333;
+        }
+        
+        .compliance-footer {
+            background: #f5f5f5;
+            border-top: 2px solid #d32f2f;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #666;
+            line-height: 1.6;
+            page-break-before: avoid;
+        }
+        
+        .compliance-footer strong {
+            color: #d32f2f;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        .table-of-contents-title {
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="page">
+    <div class="cover-page">
+        <div class="logo">🧬 APEX LABS</div>
+        <div class="subtitle">Research Peptide Reference Guide</div>
+        <h2 style="border: none; margin: 20px 0; font-size: 1.3em;">Mechanisms, Research Areas & Compound Profiles</h2>
+        
+        <div class="disclaimer-box">
+            <h3>⚠️ For Research Purposes Only</h3>
+            <p>This guide is designed for qualified researchers, institutions, and educational purposes. All compounds discussed are for research use only and not for human consumption.</p>
+        </div>
+        
+        <div class="version-info">
+            <p><strong>Edition:</strong> 1.0</p>
+            <p><strong>Published:</strong> March 2026</p>
+            <p><strong>APEX LABS Research Community</strong></p>
+        </div>
+    </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="page toc">
+    <h1 style="text-align: center; margin-bottom: 40px;">Table of Contents</h1>
+    <ul>
+        <li>1. Introduction & Scope</li>
+        <li>2. Peptide Profiles (10 Compounds)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• BPC-157 (Body Protection Compound)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• TB-500 (Thymosin Beta-4 Analogue)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• Tirzepatide (GIP/GLP-1 Receptor Agonist)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• Retatrutide (GLP-1/GIP/Glucagon Receptor Agonist)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• NAD+ (Nicotinamide Dinucleotide)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• PT-141 (Melanotan II Analogue)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• Sermorelin (GHRH Analogue)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• Ipamorelin (GH Secretagogue)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• HGH (Human Growth Hormone)</li>
+        <li style="margin-left: 20px; margin-top: 4px;">• IGF-1 LR3 (Insulin-like Growth Factor-1 Long R3)</li>
+        <li>3. Compliance & Safety Information</li>
+    </ul>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="page">
+    <h1>Introduction & Scope</h1>
+    
+    <div class="introduction">
+        <p><strong>Welcome to the APEX LABS Research Peptide Reference Guide.</strong></p>
+        
+        <p>This document provides comprehensive, evidence-based information on 10 widely-studied peptide compounds used in biomedical and cellular research. Each profile includes structural background, documented research applications, dosage ranges for research contexts, stability information, and storage guidelines.</p>
+        
+        <p><strong>Intended Audience:</strong> Qualified researchers, academic institutions, biotech professionals, and individuals with formal training in biochemistry, cell biology, or related fields.</p>
+        
+        <p><strong>What This Guide Covers:</strong></p>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Structural and biochemical origin of each compound</li>
+            <li>Documented research areas and cellular mechanisms</li>
+            <li>Dosage ranges in a research-only context</li>
+            <li>Half-life, duration of action, and stability profiles</li>
+            <li>Proper storage and handling protocols</li>
+            <li>Compliance and safety information</li>
+        </ul>
+        
+        <p style="margin-top: 15px;"><strong>What This Guide Does NOT Provide:</strong></p>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Medical advice or treatment recommendations</li>
+            <li>Instructions for human use or consumption</li>
+            <li>Claims about disease prevention, treatment, or cure</li>
+            <li>Regulatory approval status for human medicine</li>
+        </ul>
+    </div>
+    
+    <p style="margin-top: 30px; color: #999; font-size: 0.85em;"><strong>Research Context Only:</strong> All dosage information provided refers strictly to in vitro and in vivo research applications. Researchers are responsible for adhering to institutional review boards (IRBs), animal care committees (IACUCs), and all applicable regulations in their jurisdiction.</p>
+</div>
+
+<!-- PEPTIDE PROFILES START -->
+<div class="page">
+    <h2>1. BPC-157 (Body Protection Compound)</h2>
+    
+    <div class="peptide-profile">
+        <h3>BPC-157</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> Body Protection Compound-157<br>
+            <strong>Classification:</strong> Synthetic pentadecapeptide
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>BPC-157 is a synthetic peptide derived from body protection compounds found in gastric juice. It consists of 15 amino acids and has been extensively studied in both in vitro and animal models for its protective and regenerative properties.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>Tissue repair and regeneration (muscle, tendon, ligament)</li>
+                <li>Angiogenesis (blood vessel formation)</li>
+                <li>Neuroprotection and neuroplasticity</li>
+                <li>Gastrointestinal mucosa protection</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">10–1000 nM concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">1–10 μg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~6–8 hours (in vivo)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">Effects observed 24–72h post-administration</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C (refrigerated). Protect from light. Reconstituted solutions stable for 7–14 days when kept refrigerated. For long-term storage, freeze at –20°C or below.</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>2. TB-500 (Thymosin Beta-4 Analogue)</h2>
+    
+    <div class="peptide-profile">
+        <h3>TB-500</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> Thymosin Beta-4<br>
+            <strong>Classification:</strong> 43-amino acid peptide
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>TB-500 is a naturally occurring peptide found in thymus tissue and serum. Research versions are synthetic analogues of thymosin beta-4, known for immune modulation and tissue repair properties. It regulates actin dynamics and cellular migration.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>Cell migration and tissue remodeling</li>
+                <li>Angiogenesis (neovascularization)</li>
+                <li>Collagen deposition and wound healing</li>
+                <li>Myogenic differentiation</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">1–100 nM concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">2–20 mg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~2 hours (in vivo)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">Biological effects persist 48–96h despite short half-life</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C in sealed vials. Avoid repeated freeze-thaw cycles. Reconstituted solutions stable for 10–14 days refrigerated. Lyophilized (powder) form stable for 24+ months at 2–8°C.</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>3. Tirzepatide (GIP/GLP-1 Receptor Agonist)</h2>
+    
+    <div class="peptide-profile">
+        <h3>Tirzepatide</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> Tirzepatide (GIP/GLP-1 Receptor Agonist)<br>
+            <strong>Classification:</strong> 39-amino acid peptide analog
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>Tirzepatide is a dual glucose-dependent insulinotropic polypeptide (GIP) and glucagon-like peptide-1 (GLP-1) receptor agonist. It activates both GIP and GLP-1 signaling pathways simultaneously, making it a unique compound in metabolic research.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>Glucose homeostasis and insulin secretion</li>
+                <li>Metabolic regulation and weight dynamics</li>
+                <li>Incretin system function</li>
+                <li>Cellular signaling and energy metabolism</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">0.1–100 nM concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">0.1–3 mg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~5 days (in vivo, extended release)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">Steady-state effects at 4–5 week intervals</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C in original container. Protect from light and freezing. Once reconstituted, stable for 28 days refrigerated. Pre-filled pens should not be frozen.</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>4. Retatrutide (GLP-1/GIP/Glucagon Receptor Agonist)</h2>
+    
+    <div class="peptide-profile">
+        <h3>Retatrutide</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> Retatrutide (Triple Receptor Agonist)<br>
+            <strong>Classification:</strong> Synthetic peptide, 34 amino acids
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>Retatrutide is a novel triple receptor agonist that activates GLP-1, GIP, and glucagon receptors simultaneously. This tri-agonist approach represents advanced metabolic research into multi-pathway regulation.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>Metabolic regulation across multiple pathways</li>
+                <li>Glucose homeostasis and gluconeogenesis</li>
+                <li>Lipid metabolism and mitochondrial function</li>
+                <li>Multi-tissue endocrine signaling</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">0.01–10 nM concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">0.05–2 mg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~6–7 days (in vivo)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">Cumulative effects observed over 2–4 weeks</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C. Protect from freezing and light exposure. Reconstituted solutions remain stable for 14–21 days under refrigeration. Do not reuse once opened.</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>5. NAD+ (Nicotinamide Dinucleotide)</h2>
+    
+    <div class="peptide-profile">
+        <h3>NAD+ (Nicotinamide Adenine Dinucleotide)</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> β-Nicotinamide Adenine Dinucleotide<br>
+            <strong>Classification:</strong> Cofactor, nucleotide
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>NAD+ is an essential coenzyme found in all living cells. It plays a central role in metabolic redox reactions and serves as a substrate for NAD+-consuming enzymes including sirtuins and PARPs. Research-grade NAD+ is synthetically produced and used in various cellular studies.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>Mitochondrial function and ATP production</li>
+                <li>Sirtuins activation and cellular aging models</li>
+                <li>DNA repair pathways (PARP signaling)</li>
+                <li>NAD+ metabolism and metabolic adaptation</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">100 μM–10 mM concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">250–1000 mg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~30–60 minutes (in vivo)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">Acute effects; chronic studies use repeated doses</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C away from light. NAD+ is sensitive to hydrolysis; use fresh solutions when possible. Unopened vials stable for 12–24 months. Reconstituted solutions should be used within 24 hours.</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>6. PT-141 (Melanotan II Analogue)</h2>
+    
+    <div class="peptide-profile">
+        <h3>PT-141</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> Bremelanotide (PT-141)<br>
+            <strong>Classification:</strong> 7-amino acid peptide, melanocortin agonist
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>PT-141 (Bremelanotide) is a melanocortin-1A receptor agonist derived from alpha-melanocyte-stimulating hormone (α-MSH). It was developed as a research compound for studying neuroendocrine signaling and melanocortin pathways.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>Melanocortin receptor signaling</li>
+                <li>Neuroendocrine function and hormone regulation</li>
+                <li>Pigmentation and melanocyte biology</li>
+                <li>Central nervous system receptor pharmacology</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">1–100 nM concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">0.1–1 mg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~2–3 hours (in vivo)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">Peak effects at 30–60 minutes post-injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C in sealed vials. Protect from light and moisture. Reconstituted solutions stable for 7–10 days refrigerated. Lyophilized form stable for 18+ months.</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>7. Sermorelin (GHRH Analogue)</h2>
+    
+    <div class="peptide-profile">
+        <h3>Sermorelin</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> Sermorelin Acetate (GHRH 1–29 analogue)<br>
+            <strong>Classification:</strong> 29-amino acid peptide
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>Sermorelin is a synthetic analogue of growth hormone-releasing hormone (GHRH). It consists of the first 29 amino acids of the natural 44-amino acid GHRH and is used in research examining growth hormone secretion and somatotropic axis signaling.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>Growth hormone-releasing hormone receptor signaling</li>
+                <li>Somatotropic axis function</li>
+                <li>Anterior pituitary hormone secretion</li>
+                <li>Aging models and neuroendocrine regulation</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">0.1–100 nM concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">1–10 μg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~8–10 minutes (in vivo)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">GH response peaks at 30–45 minutes post-injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C. Protect from freezing (unless lyophilized). Reconstituted solutions stable for 7–14 days refrigerated. Avoid exposure to heat and direct light.</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>8. Ipamorelin (GH Secretagogue)</h2>
+    
+    <div class="peptide-profile">
+        <h3>Ipamorelin</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> Ipamorelin (Growth Hormone Secretagogue)<br>
+            <strong>Classification:</strong> Pentapeptide
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>Ipamorelin is a pentapeptide growth hormone secretagogue (GHS) that selectively stimulates GH release through ghrelin receptor signaling. Unlike other GHS compounds, ipamorelin shows minimal effects on cortisol and prolactin, making it valuable for selective GH axis research.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>Ghrelin receptor (GHSR-1a) agonism</li>
+                <li>Growth hormone secretion and regulation</li>
+                <li>Selective GH axis stimulation without hormone dysregulation</li>
+                <li>Metabolic research and muscle protein synthesis pathways</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">0.1–100 nM concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">0.5–5 μg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~2–3 hours (in vivo)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">GH peak at 30–60 minutes; effects persist 2–4 hours</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C. Protect from freezing (unless lyophilized). Reconstituted solutions stable for 7–10 days refrigerated. Avoid repeated freeze-thaw cycles.</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>9. HGH (Human Growth Hormone)</h2>
+    
+    <div class="peptide-profile">
+        <h3>HGH (Human Growth Hormone)</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> Somatotropin (191-amino acid peptide)<br>
+            <strong>Classification:</strong> Recombinant polypeptide hormone
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>HGH is a 191-amino acid peptide hormone produced by the anterior pituitary gland. Research-grade HGH is manufactured using recombinant DNA technology. It plays crucial roles in growth, metabolism, and cellular turnover, making it extensively studied in endocrinology and aging research.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>Growth hormone receptor (GHR) signaling</li>
+                <li>Cellular proliferation and differentiation</li>
+                <li>Metabolic regulation and lipid metabolism</li>
+                <li>Protein synthesis and cellular aging models</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">1–1000 ng/mL concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">1–10 μg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~15–20 minutes (in vivo)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">Hormonal effects persist 6–12 hours; IGF-1 effects longer-term</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C. Protect from freezing of liquid form (unless specified lyophilized). Reconstituted solutions stable for 14–28 days refrigerated. Avoid shaking; roll gently to mix. Unopened vials stable for 24+ months.</p>
+    </div>
+</div>
+
+<div class="page">
+    <h2>10. IGF-1 LR3 (Insulin-Like Growth Factor-1 Long R3)</h2>
+    
+    <div class="peptide-profile">
+        <h3>IGF-1 LR3</h3>
+        <div class="peptide-meta">
+            <strong>Full Name:</strong> Insulin-Like Growth Factor-1 Long R3 (70-amino acid peptide)<br>
+            <strong>Classification:</strong> Recombinant growth factor analogue
+        </div>
+        
+        <div class="section-label">Structural Origin & Background</div>
+        <p>IGF-1 LR3 is a modified analogue of insulin-like growth factor-1 (IGF-1). It features an extended N-terminus and increased resistance to IGF-binding proteins, resulting in prolonged biological half-life compared to native IGF-1. Used extensively in cellular and tissue culture research.</p>
+        
+        <div class="section-label">Documented Research Areas</div>
+        <div class="research-areas">
+            <ul>
+                <li>IGF-1 receptor (IGF-1R) signaling and proliferation</li>
+                <li>Myogenic differentiation and muscle growth</li>
+                <li>Neuronal survival and neuroprotection</li>
+                <li>Cellular metabolism and protein synthesis</li>
+            </ul>
+        </div>
+        
+        <div class="section-label">Research Dosage Ranges (in vitro/in vivo)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">In Vitro:</div>
+                <div class="info-value">1–100 ng/mL concentrations</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Animal Studies:</div>
+                <div class="info-value">20–100 μg/kg per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Pharmacokinetics</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Half-life:</div>
+                <div class="info-value">~12–24 hours (in vivo, extended due to LR3 modification)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Duration:</div>
+                <div class="info-value">Sustained effects over 24–48 hours per injection</div>
+            </div>
+        </div>
+        
+        <div class="section-label">Storage & Stability</div>
+        <p>Store at 2–8°C. Protect from freezing and light. Reconstituted solutions stable for 7–14 days refrigerated. Extended half-life analogue may require slightly more careful handling than native IGF-1. Avoid vigorous agitation.</p>
+    </div>
+</div>
+
+<!-- COMPLIANCE SECTION -->
+<div class="page">
+    <h1>Compliance & Safety Information</h1>
+    
+    <div class="compliance-footer" style="border: 1px solid #e5e5e5; padding: 30px; background: #fff9f9; margin-top: 20px;">
+        <h2 style="border: none; margin-bottom: 20px; font-size: 1.4em; color: #d32f2f;">⚠️ Legal Disclaimer</h2>
+        
+        <p><strong>All peptide compounds described in this document are sold and intended strictly for research purposes only.</strong></p>
+        
+        <p><strong>NOT FOR HUMAN CONSUMPTION.</strong> These compounds are not approved for human use, medical treatment, or therapeutic administration by any regulatory body including the FDA, EMA, or equivalent authorities.</p>
+        
+        <p>This reference guide:</p>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li><strong>Does not provide medical advice.</strong> Consult a qualified healthcare provider for any medical concerns.</li>
+            <li><strong>Does not recommend any compounds for human use.</strong> All dosage information is presented in a research-only context.</li>
+            <li><strong>Does not claim to cure, treat, diagnose, or prevent any disease.</strong> No therapeutic claims are made.</li>
+            <li><strong>Is provided for educational and research purposes only.</strong> For use by qualified researchers and institutions.</li>
+        </ul>
+        
+        <p style="margin-top: 20px;"><strong>User Responsibility:</strong> Researchers and institutions using these compounds are responsible for:</p>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Obtaining all necessary institutional approvals (IRB, IACUC, biosafety reviews)</li>
+            <li>Adhering to all applicable federal, state, and local regulations</li>
+            <li>Proper handling, storage, and disposal of research materials</li>
+            <li>Maintaining complete and accurate documentation of research protocols</li>
+            <li>Ensuring compounds do not reach minors or unauthorized individuals</li>
+        </ul>
+        
+        <p style="margin-top: 20px;"><strong>No Liability:</strong> APEX LABS makes no warranties regarding the accuracy or completeness of this document. Users assume all risk and responsibility for the use of information contained herein. APEX LABS is not liable for any direct, indirect, incidental, or consequential damages arising from the use of these compounds.</p>
+        
+        <p style="margin-top: 20px; font-weight: 600; color: #d32f2f;">By using the information in this guide, you acknowledge that you understand and accept these terms.</p>
+    </div>
+    
+    <div style="margin-top: 30px; padding: 20px; background: #f0f0f0; border-radius: 6px; font-size: 0.85em; color: #666; line-height: 1.7;">
+        <p><strong>APEX LABS Research Community</strong></p>
+        <p>This reference guide is provided as an educational resource to the research community. For questions, clarifications, or to join our Discord research community, visit https://discord.gg/kYY3p822j3</p>
+        <p style="margin-top: 15px; font-style: italic;">Edition 1.0 | March 2026 | For Research Purposes Only</p>
+    </div>
+</div>
+
+</body>
+</html>

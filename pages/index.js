@@ -114,6 +114,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Lead Magnet - Research Guide Download */}
+      <section className={styles.leadMagnet}>
+        <div className={styles.leadMagnetContent}>
+          <div className={styles.leadMagnetIcon}>📋</div>
+          <h2>Download: Research Peptide Reference Guide</h2>
+          <p className={styles.leadMagnetSubtitle}>Dosages, mechanisms, and research applications for 10+ compounds</p>
+          <form onSubmit={async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('leadMagnetEmail').value;
+            if (!email || !email.includes('@')) {
+              alert('Please enter a valid email');
+              return;
+            }
+            try {
+              const res = await fetch('/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, type: 'guide' }),
+              });
+              if (res.ok) {
+                const data = await res.json();
+                alert('Check your email for the PDF download link!');
+                document.getElementById('leadMagnetEmail').value = '';
+                // Optionally trigger download
+                if (data.downloadUrl) {
+                  window.location.href = data.downloadUrl;
+                }
+              } else {
+                alert('Error requesting guide. Please try again.');
+              }
+            } catch (err) {
+              alert('Error. Please try again.');
+            }
+          }} className={styles.leadMagnetForm}>
+            <input
+              id="leadMagnetEmail"
+              type="email"
+              placeholder="your@email.com"
+              required
+            />
+            <button type="submit" className={styles.leadMagnetButton}>
+              Get Free Guide
+            </button>
+          </form>
+          <p className={styles.leadMagnetNote}>We'll send the PDF + invite to our Discord research community</p>
+        </div>
+      </section>
+
       {/* Newsletter */}
       <section className={styles.newsletter}>
         <div className={styles.newsletterContent}>

@@ -1,0 +1,445 @@
+================================================================================
+                    🧬 APEX LABS RESEARCH COMMUNITY
+        RESEARCH PEPTIDE REFERENCE GUIDE
+        Mechanisms, Research Areas & Compound Profiles
+        Edition 1.0 | March 2026
+================================================================================
+
+⚠️  FOR RESEARCH PURPOSES ONLY
+Not for human consumption. This guide is designed for qualified researchers,
+institutions, and educational purposes only.
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+1. Introduction & Scope
+2. Peptide Profiles (10 Compounds)
+   - BPC-157 (Body Protection Compound)
+   - TB-500 (Thymosin Beta-4 Analogue)
+   - Tirzepatide (GIP/GLP-1 Receptor Agonist)
+   - Retatrutide (GLP-1/GIP/Glucagon Receptor Agonist)
+   - NAD+ (Nicotinamide Dinucleotide)
+   - PT-141 (Melanotan II Analogue)
+   - Sermorelin (GHRH Analogue)
+   - Ipamorelin (GH Secretagogue)
+   - HGH (Human Growth Hormone)
+   - IGF-1 LR3 (Insulin-like Growth Factor-1 Long R3)
+3. Compliance & Safety Information
+
+================================================================================
+1. INTRODUCTION & SCOPE
+================================================================================
+
+Welcome to the APEX LABS Research Peptide Reference Guide.
+
+This document provides comprehensive, evidence-based information on 10 
+widely-studied peptide compounds used in biomedical and cellular research. 
+Each profile includes structural background, documented research applications, 
+dosage ranges for research contexts, stability information, and storage 
+guidelines.
+
+INTENDED AUDIENCE
+Qualified researchers, academic institutions, biotech professionals, and 
+individuals with formal training in biochemistry, cell biology, or related fields.
+
+WHAT THIS GUIDE COVERS
+• Structural and biochemical origin of each compound
+• Documented research areas and cellular mechanisms
+• Dosage ranges in a research-only context
+• Half-life, duration of action, and stability profiles
+• Proper storage and handling protocols
+• Compliance and safety information
+
+WHAT THIS GUIDE DOES NOT PROVIDE
+• Medical advice or treatment recommendations
+• Instructions for human use or consumption
+• Claims about disease prevention, treatment, or cure
+• Regulatory approval status for human medicine
+
+RESEARCH CONTEXT ONLY
+All dosage information provided refers strictly to in vitro and in vivo 
+research applications. Researchers are responsible for adhering to institutional 
+review boards (IRBs), animal care committees (IACUCs), and all applicable 
+regulations in their jurisdiction.
+
+================================================================================
+2. PEPTIDE PROFILES
+================================================================================
+
+---
+PROFILE 1: BPC-157 (Body Protection Compound)
+---
+
+FULL NAME: Body Protection Compound-157
+CLASSIFICATION: Synthetic pentadecapeptide
+
+STRUCTURAL ORIGIN & BACKGROUND
+BPC-157 is a synthetic peptide derived from body protection compounds found in 
+gastric juice. It consists of 15 amino acids and has been extensively studied 
+in both in vitro and animal models for its protective and regenerative 
+properties.
+
+DOCUMENTED RESEARCH AREAS
+• Tissue repair and regeneration (muscle, tendon, ligament)
+• Angiogenesis (blood vessel formation)
+• Neuroprotection and neuroplasticity
+• Gastrointestinal mucosa protection
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        10–1000 nM concentrations
+Animal Studies:  1–10 μg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~6–8 hours (in vivo)
+Duration:   Effects observed 24–72h post-administration
+
+STORAGE & STABILITY
+Store at 2–8°C (refrigerated). Protect from light. Reconstituted solutions 
+stable for 7–14 days when kept refrigerated. For long-term storage, freeze at 
+–20°C or below.
+
+---
+PROFILE 2: TB-500 (Thymosin Beta-4 Analogue)
+---
+
+FULL NAME: Thymosin Beta-4
+CLASSIFICATION: 43-amino acid peptide
+
+STRUCTURAL ORIGIN & BACKGROUND
+TB-500 is a naturally occurring peptide found in thymus tissue and serum. 
+Research versions are synthetic analogues of thymosin beta-4, known for immune 
+modulation and tissue repair properties. It regulates actin dynamics and 
+cellular migration.
+
+DOCUMENTED RESEARCH AREAS
+• Cell migration and tissue remodeling
+• Angiogenesis (neovascularization)
+• Collagen deposition and wound healing
+• Myogenic differentiation
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        1–100 nM concentrations
+Animal Studies:  2–20 mg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~2 hours (in vivo)
+Duration:   Biological effects persist 48–96h despite short half-life
+
+STORAGE & STABILITY
+Store at 2–8°C in sealed vials. Avoid repeated freeze-thaw cycles. 
+Reconstituted solutions stable for 10–14 days refrigerated. Lyophilized 
+(powder) form stable for 24+ months at 2–8°C.
+
+---
+PROFILE 3: Tirzepatide (GIP/GLP-1 Receptor Agonist)
+---
+
+FULL NAME: Tirzepatide (GIP/GLP-1 Receptor Agonist)
+CLASSIFICATION: 39-amino acid peptide analog
+
+STRUCTURAL ORIGIN & BACKGROUND
+Tirzepatide is a dual glucose-dependent insulinotropic polypeptide (GIP) and 
+glucagon-like peptide-1 (GLP-1) receptor agonist. It activates both GIP and 
+GLP-1 signaling pathways simultaneously, making it a unique compound in 
+metabolic research.
+
+DOCUMENTED RESEARCH AREAS
+• Glucose homeostasis and insulin secretion
+• Metabolic regulation and weight dynamics
+• Incretin system function
+• Cellular signaling and energy metabolism
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        0.1–100 nM concentrations
+Animal Studies:  0.1–3 mg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~5 days (in vivo, extended release)
+Duration:   Steady-state effects at 4–5 week intervals
+
+STORAGE & STABILITY
+Store at 2–8°C in original container. Protect from light and freezing. Once 
+reconstituted, stable for 28 days refrigerated. Pre-filled pens should not be 
+frozen.
+
+---
+PROFILE 4: Retatrutide (GLP-1/GIP/Glucagon Receptor Agonist)
+---
+
+FULL NAME: Retatrutide (Triple Receptor Agonist)
+CLASSIFICATION: Synthetic peptide, 34 amino acids
+
+STRUCTURAL ORIGIN & BACKGROUND
+Retatrutide is a novel triple receptor agonist that activates GLP-1, GIP, and 
+glucagon receptors simultaneously. This tri-agonist approach represents 
+advanced metabolic research into multi-pathway regulation.
+
+DOCUMENTED RESEARCH AREAS
+• Metabolic regulation across multiple pathways
+• Glucose homeostasis and gluconeogenesis
+• Lipid metabolism and mitochondrial function
+• Multi-tissue endocrine signaling
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        0.01–10 nM concentrations
+Animal Studies:  0.05–2 mg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~6–7 days (in vivo)
+Duration:   Cumulative effects observed over 2–4 weeks
+
+STORAGE & STABILITY
+Store at 2–8°C. Protect from freezing and light exposure. Reconstituted 
+solutions remain stable for 14–21 days under refrigeration. Do not reuse once 
+opened.
+
+---
+PROFILE 5: NAD+ (Nicotinamide Dinucleotide)
+---
+
+FULL NAME: β-Nicotinamide Adenine Dinucleotide
+CLASSIFICATION: Cofactor, nucleotide
+
+STRUCTURAL ORIGIN & BACKGROUND
+NAD+ is an essential coenzyme found in all living cells. It plays a central 
+role in metabolic redox reactions and serves as a substrate for NAD+-consuming 
+enzymes including sirtuins and PARPs. Research-grade NAD+ is synthetically 
+produced and used in various cellular studies.
+
+DOCUMENTED RESEARCH AREAS
+• Mitochondrial function and ATP production
+• Sirtuins activation and cellular aging models
+• DNA repair pathways (PARP signaling)
+• NAD+ metabolism and metabolic adaptation
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        100 μM–10 mM concentrations
+Animal Studies:  250–1000 mg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~30–60 minutes (in vivo)
+Duration:   Acute effects; chronic studies use repeated doses
+
+STORAGE & STABILITY
+Store at 2–8°C away from light. NAD+ is sensitive to hydrolysis; use fresh 
+solutions when possible. Unopened vials stable for 12–24 months. Reconstituted 
+solutions should be used within 24 hours.
+
+---
+PROFILE 6: PT-141 (Melanotan II Analogue)
+---
+
+FULL NAME: Bremelanotide (PT-141)
+CLASSIFICATION: 7-amino acid peptide, melanocortin agonist
+
+STRUCTURAL ORIGIN & BACKGROUND
+PT-141 (Bremelanotide) is a melanocortin-1A receptor agonist derived from 
+alpha-melanocyte-stimulating hormone (α-MSH). It was developed as a research 
+compound for studying neuroendocrine signaling and melanocortin pathways.
+
+DOCUMENTED RESEARCH AREAS
+• Melanocortin receptor signaling
+• Neuroendocrine function and hormone regulation
+• Pigmentation and melanocyte biology
+• Central nervous system receptor pharmacology
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        1–100 nM concentrations
+Animal Studies:  0.1–1 mg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~2–3 hours (in vivo)
+Duration:   Peak effects at 30–60 minutes post-injection
+
+STORAGE & STABILITY
+Store at 2–8°C in sealed vials. Protect from light and moisture. Reconstituted 
+solutions stable for 7–10 days refrigerated. Lyophilized form stable for 18+ 
+months.
+
+---
+PROFILE 7: Sermorelin (GHRH Analogue)
+---
+
+FULL NAME: Sermorelin Acetate (GHRH 1–29 analogue)
+CLASSIFICATION: 29-amino acid peptide
+
+STRUCTURAL ORIGIN & BACKGROUND
+Sermorelin is a synthetic analogue of growth hormone-releasing hormone (GHRH). 
+It consists of the first 29 amino acids of the natural 44-amino acid GHRH and 
+is used in research examining growth hormone secretion and somatotropic axis 
+signaling.
+
+DOCUMENTED RESEARCH AREAS
+• Growth hormone-releasing hormone receptor signaling
+• Somatotropic axis function
+• Anterior pituitary hormone secretion
+• Aging models and neuroendocrine regulation
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        0.1–100 nM concentrations
+Animal Studies:  1–10 μg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~8–10 minutes (in vivo)
+Duration:   GH response peaks at 30–45 minutes post-injection
+
+STORAGE & STABILITY
+Store at 2–8°C. Protect from freezing (unless lyophilized). Reconstituted 
+solutions stable for 7–14 days refrigerated. Avoid exposure to heat and direct 
+light.
+
+---
+PROFILE 8: Ipamorelin (GH Secretagogue)
+---
+
+FULL NAME: Ipamorelin (Growth Hormone Secretagogue)
+CLASSIFICATION: Pentapeptide
+
+STRUCTURAL ORIGIN & BACKGROUND
+Ipamorelin is a pentapeptide growth hormone secretagogue (GHS) that selectively 
+stimulates GH release through ghrelin receptor signaling. Unlike other GHS 
+compounds, ipamorelin shows minimal effects on cortisol and prolactin, making 
+it valuable for selective GH axis research.
+
+DOCUMENTED RESEARCH AREAS
+• Ghrelin receptor (GHSR-1a) agonism
+• Growth hormone secretion and regulation
+• Selective GH axis stimulation without hormone dysregulation
+• Metabolic research and muscle protein synthesis pathways
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        0.1–100 nM concentrations
+Animal Studies:  0.5–5 μg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~2–3 hours (in vivo)
+Duration:   GH peak at 30–60 minutes; effects persist 2–4 hours
+
+STORAGE & STABILITY
+Store at 2–8°C. Protect from freezing (unless lyophilized). Reconstituted 
+solutions stable for 7–10 days refrigerated. Avoid repeated freeze-thaw cycles.
+
+---
+PROFILE 9: HGH (Human Growth Hormone)
+---
+
+FULL NAME: Somatotropin (191-amino acid peptide)
+CLASSIFICATION: Recombinant polypeptide hormone
+
+STRUCTURAL ORIGIN & BACKGROUND
+HGH is a 191-amino acid peptide hormone produced by the anterior pituitary 
+gland. Research-grade HGH is manufactured using recombinant DNA technology. It 
+plays crucial roles in growth, metabolism, and cellular turnover, making it 
+extensively studied in endocrinology and aging research.
+
+DOCUMENTED RESEARCH AREAS
+• Growth hormone receptor (GHR) signaling
+• Cellular proliferation and differentiation
+• Metabolic regulation and lipid metabolism
+• Protein synthesis and cellular aging models
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        1–1000 ng/mL concentrations
+Animal Studies:  1–10 μg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~15–20 minutes (in vivo)
+Duration:   Hormonal effects persist 6–12 hours; IGF-1 effects longer-term
+
+STORAGE & STABILITY
+Store at 2–8°C. Protect from freezing of liquid form (unless specified 
+lyophilized). Reconstituted solutions stable for 14–28 days refrigerated. Avoid 
+shaking; roll gently to mix. Unopened vials stable for 24+ months.
+
+---
+PROFILE 10: IGF-1 LR3 (Insulin-Like Growth Factor-1 Long R3)
+---
+
+FULL NAME: Insulin-Like Growth Factor-1 Long R3 (70-amino acid peptide)
+CLASSIFICATION: Recombinant growth factor analogue
+
+STRUCTURAL ORIGIN & BACKGROUND
+IGF-1 LR3 is a modified analogue of insulin-like growth factor-1 (IGF-1). It 
+features an extended N-terminus and increased resistance to IGF-binding 
+proteins, resulting in prolonged biological half-life compared to native IGF-1. 
+Used extensively in cellular and tissue culture research.
+
+DOCUMENTED RESEARCH AREAS
+• IGF-1 receptor (IGF-1R) signaling and proliferation
+• Myogenic differentiation and muscle growth
+• Neuronal survival and neuroprotection
+• Cellular metabolism and protein synthesis
+
+RESEARCH DOSAGE RANGES (in vitro/in vivo)
+In Vitro:        1–100 ng/mL concentrations
+Animal Studies:  20–100 μg/kg per injection
+
+PHARMACOKINETICS
+Half-life:  ~12–24 hours (in vivo, extended due to LR3 modification)
+Duration:   Sustained effects over 24–48 hours per injection
+
+STORAGE & STABILITY
+Store at 2–8°C. Protect from freezing and light. Reconstituted solutions 
+stable for 7–14 days refrigerated. Extended half-life analogue may require 
+slightly more careful handling than native IGF-1. Avoid vigorous agitation.
+
+================================================================================
+3. COMPLIANCE & SAFETY INFORMATION
+================================================================================
+
+⚠️  LEGAL DISCLAIMER - PLEASE READ CAREFULLY
+
+All peptide compounds described in this document are sold and intended strictly 
+for research purposes only.
+
+NOT FOR HUMAN CONSUMPTION.
+
+These compounds are not approved for human use, medical treatment, or 
+therapeutic administration by any regulatory body including the FDA, EMA, or 
+equivalent authorities.
+
+THIS REFERENCE GUIDE:
+
+✗ Does not provide medical advice. Consult a qualified healthcare provider for 
+  any medical concerns.
+
+✗ Does not recommend any compounds for human use. All dosage information is 
+  presented in a research-only context.
+
+✗ Does not claim to cure, treat, diagnose, or prevent any disease. No 
+  therapeutic claims are made.
+
+✗ Is provided for educational and research purposes only. For use by qualified 
+  researchers and institutions.
+
+USER RESPONSIBILITY
+
+Researchers and institutions using these compounds are responsible for:
+• Obtaining all necessary institutional approvals (IRB, IACUC, biosafety reviews)
+• Adhering to all applicable federal, state, and local regulations
+• Proper handling, storage, and disposal of research materials
+• Maintaining complete and accurate documentation of research protocols
+• Ensuring compounds do not reach minors or unauthorized individuals
+
+NO LIABILITY
+
+APEX LABS makes no warranties regarding the accuracy or completeness of this 
+document. Users assume all risk and responsibility for the use of information 
+contained herein. APEX LABS is not liable for any direct, indirect, 
+incidental, or consequential damages arising from the use of these compounds.
+
+By using the information in this guide, you acknowledge that you understand and 
+accept these terms.
+
+================================================================================
+APEX LABS RESEARCH COMMUNITY
+
+This reference guide is provided as an educational resource to the research 
+community. For questions, clarifications, or to join our Discord research 
+community, visit:
+
+https://discord.gg/kYY3p822j3
+
+Edition 1.0 | March 2026 | For Research Purposes Only
+================================================================================

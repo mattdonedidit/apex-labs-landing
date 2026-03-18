@@ -127,6 +127,91 @@
   font-size: 0.95rem;
 }
 
+/* Lead Magnet Section */
+.leadMagnet {
+  background: linear-gradient(135deg, #e8f0f7 0%, #f0f4ff 100%);
+  padding: 80px 20px;
+  border-top: 1px solid #d4dae5;
+  border-bottom: 1px solid #d4dae5;
+}
+
+.leadMagnetContent {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.leadMagnetIcon {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.leadMagnet h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a3a52;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.leadMagnetSubtitle {
+  font-size: 1.1rem;
+  color: #445566;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.leadMagnetForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.leadMagnetForm input {
+  flex: 0 1 280px;
+  padding: 12px 16px;
+  background: white;
+  border: 2px solid #b8cde0;
+  border-radius: 6px;
+  color: #333;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.leadMagnetForm input:focus {
+  outline: none;
+  border-color: #2d7f4a;
+  box-shadow: 0 0 0 3px rgba(45, 127, 74, 0.1);
+}
+
+.leadMagnetButton {
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #2d7f4a 0%, #1d5a34 100%);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(45, 127, 74, 0.2);
+}
+
+.leadMagnetButton:hover {
+  background: linear-gradient(135deg, #1d5a34 0%, #0f3a1f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 127, 74, 0.3);
+}
+
+.leadMagnetNote {
+  font-size: 0.85rem;
+  color: #667788;
+  margin-top: 15px;
+  font-style: italic;
+}
+
 /* Products Section */
 .products {
   max-width: 1200px;
@@ -378,7 +463,8 @@
 
   .benefits h2,
   .products h2,
-  .cta h2 {
+  .cta h2,
+  .leadMagnet h2 {
     font-size: 1.5rem;
   }
 
@@ -392,6 +478,15 @@
 
   .form input,
   .form button {
+    width: 100%;
+  }
+
+  .leadMagnetForm {
+    flex-direction: column;
+  }
+
+  .leadMagnetForm input,
+  .leadMagnetButton {
     width: 100%;
   }
 }
